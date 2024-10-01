@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let botao = document.getElementById("adicionarBotao");
+        let conteudo = document.getElementById("conteudo");
+
+        botao.addEventListener("click", function() {
+            // Cria um novo parágrafo
+            let novoParagrafo = document.createElement("p");
+            novoParagrafo.textContent = "Este é um novo parágrafo."
+
+            // Adiciona o parágrafo ao div 'conteudo'
+            conteudo.appendChild(novoParagrafo);
+        });
+    </script>
+</body>
+</html>

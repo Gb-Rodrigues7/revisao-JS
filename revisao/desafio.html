@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(#6e6e6e, #d2d2d2);
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: aqua;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testes De Interação</h1>
+    </header>
+
+    <section class="entrar">
+        <p>Você deseja acessar o site?</p>
+        <button id="entrar">Entrar</button>
+    </section>
+
+    <section>
+        <h2>Inserir Nome do Usuário</h2>
+        <input id="userName" type="text" placeholder="Digite seu nome">
+        <button id="submitName">Enviar</button>
+        <p id="greeting"></p>
+    </section>
+
+    <section>
+        <h2>Data Atual</h2>
+        <p id="dataAtual"></p>
+    </section>
+
+    <section>
+        <h2>Calcular Média</h2>
+        <form id="mediaForm">
+            <label>Insira as médias (separados por vírgula):</label>
+            <input id="mediaInput" type="text" placeholder="Ex: 8, 9, 10">
+            <button type="submit">Resultado</button>
+        </form>
+        <p id="NumPar">Este número é:</p>
+    </section>
+
+    <section>
+        <h2>Calcular Valores</h2>
+        <label>Para Adição</label>
+        <input id="adicao" type="number">
+        <label>Para Subtração</label>
+        <input id="sub" type="number">
+        <label>Para Porcentagem</label>
+        <input id="porcentagem" type="number">
+        <button id="calculardbl">Duplo Clique para Calcular</button>
+        <p id="ResultadoCalc"></p>
+    </section>
+
+    <section id="tableArray">
+        <h2>Tabela de Itens</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Linhas da tabela aparecerão aqui -->
+            </tbody>
+        </table>
+        <button id="exibirTabela">Exibir Tabela</button>
+    </section>
+
+    <div id="allDeleteBody">
+        <button id="deleteBody">Adeus conteúdo!</button>
+    </div>
+
+    <footer>
+        <p id="footerData"></p>
+    </footer> 
+
+    <script src="./script.js"></script>
+</body>
+</html>
